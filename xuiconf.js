@@ -2,7 +2,10 @@
 
 // [[Page Appearance
 xui.ini.$PageAppearance = {
-    "theme":"default"
+    "background":{
+        "background-color":"#1E90FF"
+    },
+    "theme":"lightblue"
 };
 // ]]Page Appearance
 
@@ -15,9 +18,11 @@ xui.ini.$DevEnv = {
     "designViewConf":{
         "width":960,
         "height":600
-    }
+    },
+    "SpaceUnit":"px"
 };
 // ]]Develop Env Setting
+
 // [[Global Functions
 xui.$cache.functions = {
     "$APICaller:beforeData":{
@@ -74,10 +79,9 @@ xui.$cache.functions = {
                 "timeout":0
             }
         ]
-    } 
+    }
 };
 // ]]Global Functions
-
 // [[Constant Data
 xui.constant = {
     "request_url":"http://www.crossui.com/demo/OrderManagement/request.php"
